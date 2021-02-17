@@ -3,8 +3,10 @@
 #include <vector>
 using namespace std;
 
+
 vector <int> scal(vector <int> a, vector <int> b) 
 {
+	
     vector <int> tb;
     
     for(!a.empty() && !b.empty())
@@ -29,6 +31,7 @@ vector <int> uporzadkuj(vector <int> tb)
     vector <int> a;
     vector <int> b;
 
+	
     if(tb.size()==1)
     {
         return tb;
@@ -51,7 +54,7 @@ vector <int> uporzadkuj(vector <int> tb)
 
 int main(int argc, char** argv) 
 {
-    vector <int> t {8, 4, 2, 1};
+     vector <int> t {8, 4, 2, 1};
     uporzadkuj(t);
 
     for(int i=0; i<t.size(); i++)
